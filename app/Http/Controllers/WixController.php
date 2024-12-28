@@ -18,7 +18,7 @@ class WixController extends Controller
      */
     public function complete(Request $request): RedirectResponse
     {
-        $this->connection->connectSite(1, $request->wixSiteId);
+        $this->connection->connectSite(auth()->id, (int) $request->wixSiteId);
         return redirect()->route('dashboard');
     }
 }
