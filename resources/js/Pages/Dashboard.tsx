@@ -1,3 +1,4 @@
+import AppLink from '@/Components/AppLink';
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
 
@@ -20,7 +21,7 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
-                <a href="/wix/oauth/initiate" className="text-white">Connect wix site</a>
+                <AppLink href="/profile" className="text-white">Connect wix site</AppLink>
             </div>
 
         </AuthenticatedLayout>

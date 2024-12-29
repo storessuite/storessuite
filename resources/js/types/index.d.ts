@@ -1,5 +1,13 @@
 import { Config } from 'ziggy-js';
 
+export type AppLinkProps = {
+    target?: string;
+    href: string;
+    children?: any;
+    className?: string;
+    propsToRefresh?: Array<string>;
+};
+
 export interface User {
     id: number;
     name: string;
