@@ -12,8 +12,8 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__ . '/../routes/console.php',
         health: '/up',
         then: function () {
-            Route::prefix('wix')
-                ->group(base_path('routes/wix.php'));
+            Route::prefix('wix')->group(base_path('routes/wix.php'));
+            Route::group(base_path('routes/storessuite.php'));
         }
     )
     ->withMiddleware(function (Middleware $middleware) {

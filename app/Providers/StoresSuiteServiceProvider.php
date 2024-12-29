@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Vite;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
-class AppServiceProvider extends ServiceProvider
+class StoresSuiteServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -20,6 +20,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Vite::prefetch(concurrency: 3);
+        if (env('FORCE_HTTPS', false)) {
+            URL::forceScheme('https');
+        }
     }
 }
