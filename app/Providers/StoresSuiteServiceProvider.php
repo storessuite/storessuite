@@ -2,8 +2,10 @@
 
 namespace App\Providers;
 
+use App\Services\WixService;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
+use StoresSuite\Wix\Contracts\WixContract;
 
 class StoresSuiteServiceProvider extends ServiceProvider
 {
@@ -12,7 +14,7 @@ class StoresSuiteServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(WixContract::class, WixService::class);
     }
 
     /**
