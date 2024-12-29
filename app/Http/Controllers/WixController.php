@@ -17,20 +17,6 @@ class WixController extends Controller
     ) {}
 
     /**
-     * Complete wix connection
-     *
-     * @param Request $request
-     * @return RedirectResponse
-     */
-    public function complete(Request $request): RedirectResponse
-    {
-        $this->connection->connectSite(Auth::id(), (int) $request->wixSiteId);
-        $stateData = json_decode(decrypt($request->state), true);
-        if ($stateData['platform'] === Platform::WEB->value)
-            return redirect()->route('dashboard');
-    }
-
-    /**
      * Initiate wix connection
      *
      * @param Request $request
@@ -44,5 +30,19 @@ class WixController extends Controller
                 'platform' => $plaform->value
             ]))
         ]);
+    }
+
+    /**
+     * Complete wix connection
+     *
+     * @param Request $request
+     * @return RedirectResponse
+     */
+    public function complete(Request $request): RedirectResponse
+    {
+        $this->connection->connectSite(Auth::id(), (int) $request->wixSiteId);
+        $stateData = json_decode(decrypt($request->state), true);
+        if ($stateData['platform'] === Platform::WEB->value)
+            return redirect()->route('dashboard');
     }
 }
