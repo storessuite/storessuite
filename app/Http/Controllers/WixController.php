@@ -7,12 +7,12 @@ use App\Services\PlatformService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use StoresSuite\WixConnect\Connection;
+use StoresSuite\WixConnect\WixConnect;
 
 class WixController extends Controller
 {
     public function __construct(
-        private Connection $connection,
+        private WixConnect $wixConnect,
         private PlatformService $platformService
     ) {}
 
@@ -40,7 +40,7 @@ class WixController extends Controller
      */
     public function complete(Request $request): RedirectResponse
     {
-        $this->connection->connectSite(Auth::id(), (int) $request->wixSiteId);
+        $this->wixConnect->connectSite(Auth::id(), (int) $request->wixSiteId);
         $stateData = json_decode(decrypt($request->state), true);
         if ($stateData['platform'] === Platform::WEB->value)
             return redirect()->route('dashboard');

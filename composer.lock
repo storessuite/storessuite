@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c181d0a5c2e9f4d10f44148efbc1612",
+    "content-hash": "ef181f84212f3653f913140665711305",
     "packages": [
         {
             "name": "brick/math",
@@ -3489,16 +3489,16 @@
         },
         {
             "name": "storessuite/wix-connect",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/storessuite/wix-connect.git",
-                "reference": "c95d1305fdbecd4fb550b7485db2609aa193acb0"
+                "reference": "7637dc5e116943688cabea64258e2611c7346fe8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/storessuite/wix-connect/zipball/c95d1305fdbecd4fb550b7485db2609aa193acb0",
-                "reference": "c95d1305fdbecd4fb550b7485db2609aa193acb0",
+                "url": "https://api.github.com/repos/storessuite/wix-connect/zipball/7637dc5e116943688cabea64258e2611c7346fe8",
+                "reference": "7637dc5e116943688cabea64258e2611c7346fe8",
                 "shasum": ""
             },
             "require": {
@@ -3530,9 +3530,9 @@
             "description": "Adapter between storessuite/storessuite and storessuite/wix.",
             "support": {
                 "issues": "https://github.com/storessuite/wix-connect/issues",
-                "source": "https://github.com/storessuite/wix-connect/tree/0.0.2"
+                "source": "https://github.com/storessuite/wix-connect/tree/0.0.3"
             },
-            "time": "2024-12-28T07:29:42+00:00"
+            "time": "2024-12-29T12:58:08+00:00"
         },
         {
             "name": "symfony/clock",

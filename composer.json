@@ -12,7 +12,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "storessuite/wix": "0.0.35",
-        "storessuite/wix-connect": "0.0.2",
+        "storessuite/wix-connect": "0.0.3",
         "tightenco/ziggy": "^2.0"
     },
     "require-dev": {
