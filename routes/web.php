@@ -38,11 +38,17 @@ require __DIR__ . '/auth.php';
 |
 */
 
-Route::prefix('wix')
+Route::name('wix.')
+    ->prefix('wix')
     ->middleware(['auth', 'verified'])
     ->group(function () {
         Route::get('oauth/complete', [WixController::class, 'complete'])->name('oauth.complete');
         Route::get('oauth/initiate', [WixController::class, 'initiate'])->name('oauth.initiate');
+    });
+Route::name('wix.')
+    ->prefix('wix')
+    ->group(function () {
+        Route::get('install', [WixController::class, 'install'])->name('install');
     });
 
 /*

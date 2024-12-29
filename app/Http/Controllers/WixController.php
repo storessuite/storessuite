@@ -7,6 +7,8 @@ use App\Services\PlatformService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Inertia\Inertia;
+use Inertia\Response;
 use StoresSuite\WixConnect\WixConnect;
 
 class WixController extends Controller
@@ -15,6 +17,15 @@ class WixController extends Controller
         private WixConnect $wixConnect,
         private PlatformService $platformService
     ) {}
+
+    /**
+     * Prompt user to install wix app
+     * 
+     * @return Response
+     */
+    public function install(): Response {
+        return Inertia::render('Wix/Install');
+    }
 
     /**
      * Initiate wix connection
