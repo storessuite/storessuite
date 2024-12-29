@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use StoresSuite\Wix\Services\WixSiteService;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -24,13 +25,8 @@ class LoginWixUser
     {
         if ($request->instance) {
             $wixSite = $this->wixSiteService->findByInstance($request->instance);
-            $user = $this->user->query()
-                ->where('email', $wixSite->_id)
-                ->first();
-
-            if (!$user) {
-                
-            }
+            $user = $this->user->query()->where('email', $wixSite->_id)->first();
+            Auth::login($user);
         }
 
         return $next($request);

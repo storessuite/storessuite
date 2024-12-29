@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c25e4462d59dcb57d3d1f02eabc4904d",
+    "content-hash": "ce881ca62196847600a67ea573f6455d",
     "packages": [
         {
             "name": "brick/math",
@@ -3439,16 +3439,16 @@
         },
         {
             "name": "storessuite/wix",
-            "version": "0.0.37",
+            "version": "0.0.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/storessuite/wix.git",
-                "reference": "33d007fe0facc37402402fd59f61bfd1b8b7e5ed"
+                "reference": "89e327d5343760d954b03db786e5215813099ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/storessuite/wix/zipball/33d007fe0facc37402402fd59f61bfd1b8b7e5ed",
-                "reference": "33d007fe0facc37402402fd59f61bfd1b8b7e5ed",
+                "url": "https://api.github.com/repos/storessuite/wix/zipball/89e327d5343760d954b03db786e5215813099ff2",
+                "reference": "89e327d5343760d954b03db786e5215813099ff2",
                 "shasum": ""
             },
             "require": {
@@ -3483,9 +3483,9 @@
             "description": "Wix integration for Laravel apps.",
             "support": {
                 "issues": "https://github.com/storessuite/wix/issues",
-                "source": "https://github.com/storessuite/wix/tree/0.0.37"
+                "source": "https://github.com/storessuite/wix/tree/0.0.40"
             },
-            "time": "2024-12-29T13:40:45+00:00"
+            "time": "2024-12-29T15:36:12+00:00"
         },
         {
             "name": "storessuite/wix-connect",
