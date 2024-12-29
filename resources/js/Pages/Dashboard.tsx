@@ -20,7 +20,9 @@ export default function Dashboard() {
                         </div>
                     </div>
                 </div>
+                <a href="/wix/oauth/initiate" className="text-white">Connect wix site</a>
             </div>
+
         </AuthenticatedLayout>
     );
 }
