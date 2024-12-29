@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "933ebf00be84da97ff69580ed7860289",
+    "content-hash": "b7b173624c8257803620a9e3c62a0525",
     "packages": [
         {
             "name": "brick/math",
@@ -3439,16 +3439,16 @@
         },
         {
             "name": "storessuite/wix",
-            "version": "0.0.29",
+            "version": "0.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/storessuite/wix.git",
-                "reference": "26743b3f260859967a6e9c694c197b4fc2fcfb63"
+                "reference": "ea1b7636e449f4236636239dbf9a956862e534f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/storessuite/wix/zipball/26743b3f260859967a6e9c694c197b4fc2fcfb63",
-                "reference": "26743b3f260859967a6e9c694c197b4fc2fcfb63",
+                "url": "https://api.github.com/repos/storessuite/wix/zipball/ea1b7636e449f4236636239dbf9a956862e534f6",
+                "reference": "ea1b7636e449f4236636239dbf9a956862e534f6",
                 "shasum": ""
             },
             "require": {
@@ -3483,9 +3483,9 @@
             "description": "Wix integration for Laravel apps.",
             "support": {
                 "issues": "https://github.com/storessuite/wix/issues",
-                "source": "https://github.com/storessuite/wix/tree/0.0.29"
+                "source": "https://github.com/storessuite/wix/tree/0.0.30"
             },
-            "time": "2024-12-24T15:28:28+00:00"
+            "time": "2024-12-29T07:18:21+00:00"
         },
         {
             "name": "storessuite/wix-connect",
@@ -9377,12 +9377,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
